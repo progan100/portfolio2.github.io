@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Таблица слайдера -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- AOS анимация при скроле страницы-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+    <!-- sweetalert модальное окно-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"> -->
+    <!-- Animete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Наша таблица стилей -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/Black and White Collection 11.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <title>Веб-разработчик</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000">
+        <div class="header_name">
+            <div class="header_logo">
+                <a href="#"><img src="img/Black and White Collection 10.svg" alt="logo"></a>
+            </div>
+            <div class="header_text">
+                <h1 class="header_h1">Ania</h1>
+                <p class="text-logo">веб-разработчик</p>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="header_button" onclick="changeBackgroundColor()">Сменить тему</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Главная</a></li>
+            <li class="menu-item"><a href="#skills">Навыки</a></li>
+            <li class="menu-item"><a href="#">Опыт</a></li>
+            <li class="menu-item"><a href="#works">Работы</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item"><a href="https://progan100.github.io/magazin.github.io/"
+                            target="_blank">Веб-сайт по Ван-пису</a></li>
+                    <li class="dropdown-item"><a href="https://progan100.github.io/magazine3.github.io/"
+                            target="_blank">Сайт Лего-Героев</a></li>
+                    <li class="dropdown-item"><a href="https://progan100.github.io/magazine2.github.io/"
+                            target="_blank">Небольшой интернет-магазина</a></li>
+                    <li class="dropdown-item"><a href="https://progan100.github.io/one-piece.github.io/"
+                            target="_blank">Интернет-магазин</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#contacts">Контакты</a></li>
+            <li class="menu-item"><a href="#">Блог</a></li>
+        </ul>
+    </nav>
+    <main>
+
+
+        <section class="about" data-aos="fade-up" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000">
+            <!-- Слайдер -->
+            <div class="slider">
+
+                <!-- 1 слайд -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="about-text">
+                            <h1>Привет, меня зовут “Аня”</h1>
+                            <p>Я начинающий фронтенд-разработчик</p>
+                            <a href="#works" class="about-button">Работы</a>
+                        </div>
+
+                        <img src="img/Rectangle.png" alt="picture">
+                    </div>
+                </div>
+
+                <!-- 2 слайд -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="about-text">
+                            <h1>Увлекюсь дизайном</h1>
+                            <p>Мне нравится продумывать UI/UX дизайн от начала работы и до конечного результата</p>
+                            <a href="#contacts" class="about-button">Связаться</a>
+                        </div>
+
+                        <img src="img/Rectangle22.png" alt="picture">
+                    </div>
+                </div>
+
+                <!-- 3 слайд -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="about-text">
+                            <h1>А еще я люблю гулять и учиться новому</h1>
+                            <p>Но мне не нравиться жаркая погода</p>
+                            <!-- <a href="#works" class="about-button">Работы</a> -->
+                        </div>
+
+                        <img src="img/Rectangle33.png" alt="picture">
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Навыки</h2>
+            <div class="skills-items">
+                <h3>CSS</h3>
+                <h3>JavaScript</h3>
+                <h3>Html</h3>
+            </div>
+        </section>
+
+        <section class="works" id="works" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+            <div class="works-text">
+                <h2>Работы</h2>
+                <p>Ниже вы можете ознакомиться с моими недавними работами</p>
+            </div>
+            <div class="works-items">
+                <div class="work-item" data-aos="fade-right" data-aos-mirror="true" data-aos-duration="1000">
+                    <div class="work-text">
+                        <h3>Веб-сайт по Ван-пису</h3>
+                        <p>В данном проекте используются кастомные шрифты, яркий дизайн.
+                        </p>
+                    </div>
+                    <a href="https://progan100.github.io/magazin.github.io/" target="_blank">
+                        <div class="card-image"
+                            style="background-image: url(img/Снимок\ экрана\ 2023-04-07\ 181817.png);"></div>
+                    </a>
+                </div>
+                <div class="work-item" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1000">
+                    <div class="work-text">
+                        <h3>Сайт Лего-Героев</h3>
+                        <p>При создании этого проекта использовались такие технологии, как: html5, css3.</p>
+                    </div>
+                    <a href="https://progan100.github.io/magazine3.github.io/" target="_blank">
+                        <div class="card-image"
+                            style="background-image: url(img/Снимок\ веб-страницы_7-4-2023_1800_.jpeg);"></div>
+                    </a>
+                </div>
+                <div class="work-item" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="800">
+                    <div class="work-text">
+                        <h3>Небольшой макет интернет-магазина</h3>
+                        <p>Необходимо было создать карточки для товаров.
+                        </p>
+                    </div>
+                    <a href="https://progan100.github.io/magazine2.github.io/" target="_blank">
+                        <div class="card-image"
+                            style="background-image: url(img/Снимок\ экрана\ 2023-04-07\ 181918.png);"></div>
+                    </a>
+                </div>
+                <div class="work-item" data-aos="fade-left" data-aos-mirror="true" data-aos-duration="800">
+                    <div class="work-text">
+                        <h3>Интернет-магазин </h3>
+                        <p>Необычный проект, создание макета для интернет-магазина по Ван-пису</p>
+                    </div>
+                    <a href="https://progan100.github.io/one-piece.github.io/" target="_blank">
+                        <div class="card-image"
+                            style="background-image: url(img/Снимок\ экрана\ 2023-04-07\ 182036.png);"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="form-container">
+                <h2>Связаться со мной</h2>
+                <form id="myForm">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" required
+                        placeholder="Сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="img/Black and White Collection 11.svg" alt=""></a>
+        <p> Этот сайт был создан Хорошавиной Аней. All rights reserved © 2023</p>
+        <div class="social">
+            <a href="https://discordapp.com/users/618828335451078656/ " target="_blank"><img src="img/discord1.svg"
+                    alt="" width="50px"></a>
+            <a href="https://www.youtube.com/@angek4893/featured" target="_blank"><img src="img/youtube2.svg" alt=""
+                    width="50px"></a>
+            <a href="mailto:anahorosavina171@gmail.com" target="_blank"><img src="img/email3.svg" alt=""
+                    width="50px"></a>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Успех</h2>
+            <p>Данные успешно отправлены</p>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Слайдер -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Инициализация -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- sweetAlert -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script> -->
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
